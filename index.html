@@ -112,7 +112,8 @@
         const withDrawNumber = parseFloat(withDrawAmount);
 
         updateSpanText('currentWithDraw', withDrawNumber);
-        updateWithDrawText('currentBalance', withDrawNumber);
+        updateSpanText('currentBalance', -1 * withDrawNumber);
+        // updateWithDrawText('currentBalance', withDrawNumber);
 
         document.getElementById('withDrawAmount').value = '';
       });
@@ -124,12 +125,12 @@
         document.getElementById(id).innerText = total;
       }
 
-      function updateWithDrawText(id, withDrawNumber) {
-        const current = document.getElementById(id).innerText;
-        const currentNumber = parseFloat(current);
-        const total = currentNumber - withDrawNumber;
-        document.getElementById(id).innerText = total;
-      }
+      //   function updateWithDrawText(id, withDrawNumber) {
+      //     const current = document.getElementById(id).innerText;
+      //     const currentNumber = parseFloat(current);
+      //     const total = currentNumber - withDrawNumber;
+      //     document.getElementById(id).innerText = total;
+      //   }
     </script>
   </body>
 </html>
