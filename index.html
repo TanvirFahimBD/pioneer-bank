@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="login-are">
+    <div id="login-area">
       <h1 class="text-center text-white">Welcome to Pioneer Bank</h1>
       <div class="submit-area">
         <h4 class="text-light">Login</h4>
@@ -34,13 +34,10 @@
     </div>
     <script>
       const loginBtn = document.getElementById('login');
-      loginBtn.addEventListener('mousemove', function () {
-        console.log('Mouse Moved');
+      loginBtn.addEventListener('click', function () {
+        const loginArea = document.getElementById('login-area');
+        loginArea.style.display = 'none';
       });
-      //   const loginBtn = document.getElementById('login');
-      //   loginBtn.addEventListener('click', function () {
-      //     console.log('Clicked Me');
-      //   });
     </script>
   </body>
 </html>
