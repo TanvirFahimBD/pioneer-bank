@@ -3,3 +3,9 @@ body {
   background-color: blueviolet;
   padding: 100px;
 }
+.submit-area {
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(49, 48, 48);
+  padding: 20px;
+}
