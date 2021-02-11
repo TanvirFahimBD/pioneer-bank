@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: blueviolet;
+  background-color: lightsteelblue;
   padding: 100px;
 }
 .submit-area {
@@ -11,4 +11,19 @@ body {
 }
 #transaction-area {
   display: none;
+}
+.status {
+  margin: 0px 10px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.deposit {
+  background-color: slateblue;
+}
+.withdraw {
+  background-color: lightsalmon;
+}
+.balance {
+  background-color: orange;
 }
